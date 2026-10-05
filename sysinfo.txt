@@ -1,0 +1,250 @@
+
+======================================================================
+1. 系统信息
+======================================================================
+主机名: zhanglei
+系统: Linux 5.4.0-126-generic
+版本: #142~18.04.1-Ubuntu SMP Thu Sep 1 16:25:16 UTC 2022
+架构: x86_64
+处理器: x86_64
+======================================================================
+2. Python 环境
+======================================================================
+当前脚本 Python 版本: 3.6.9 (default, Mar 10 2023, 16:46:00) 
+[GCC 8.4.0]
+当前脚本可执行文件: /usr/bin/python3
+
+sys.path:
+   /data1/users/yangjunyi/basic
+   /usr/lib/python36.zip
+   /usr/lib/python3.6
+   /usr/lib/python3.6/lib-dynload
+   /usr/local/lib/python3.6/dist-packages
+   /usr/lib/python3/dist-packages
+
+which python: /usr/bin/python
+python --version: Python 2.7.17
+which python3: /usr/bin/python3
+python3 --version: Python 3.6.9
+which pip: /usr/local/bin/pip
+pip -V: pip 20.3.3 from /usr/local/lib/python3.6/dist-packages/pip (python 3.6)
+python3 -m pip -V: pip 20.3.3 from /usr/local/lib/python3.6/dist-packages/pip (python 3.6)
+
+======================================================================
+3. pip 关键包信息
+======================================================================
+
+--- torch (通过 /usr/bin/python3 -m pip show) ---
+Name: torch
+Version: 1.7.1+cu110
+Summary: Tensors and Dynamic neural networks in Python with strong GPU acceleration
+Home-page: https://pytorch.org/
+Author: PyTorch Team
+Author-email: packages@pytorch.org
+License: BSD-3
+Location: /usr/local/lib/python3.6/dist-packages
+Requires: dataclasses, typing-extensions, numpy
+Required-by: torchvision, torchstat, torchaudio, thop
+
+--- torchvision (通过 /usr/bin/python3 -m pip show) ---
+Name: torchvision
+Version: 0.8.2+cu110
+Summary: image and video datasets and models for torch deep learning
+Home-page: https://github.com/pytorch/vision
+Author: PyTorch Core Team
+Author-email: soumith@pytorch.org
+License: BSD
+Location: /usr/local/lib/python3.6/dist-packages
+Requires: torch, pillow, numpy
+Required-by:
+
+--- torchaudio (通过 /usr/bin/python3 -m pip show) ---
+Name: torchaudio
+Version: 0.7.2
+Summary: An audio package for PyTorch
+Home-page: https://github.com/pytorch/audio
+Author: Soumith Chintala, David Pollack, Sean Naren, Peter Goldsborough
+Author-email: soumith@pytorch.org
+License: UNKNOWN
+Location: /usr/local/lib/python3.6/dist-packages
+Requires: torch
+Required-by:
+
+--- numpy (通过 /usr/bin/python3 -m pip show) ---
+Name: numpy
+Version: 1.19.4
+Summary: NumPy is the fundamental package for array computing with Python.
+Home-page: https://www.numpy.org
+Author: Travis E. Oliphant et al.
+Author-email: None
+License: BSD
+Location: /usr/local/lib/python3.6/dist-packages
+Requires: 
+Required-by: torchvision, torchstat, torch, tensorboardX, seaborn, scipy, scikit-learn, pandas, opencv-python, matplotlib, cupy-cuda111
+
+--- tensorflow (通过 /usr/bin/python3 -m pip show) ---
+WARNING: Package(s) not found: tensorflow
+
+--- tensorflow-gpu (通过 /usr/bin/python3 -m pip show) ---
+WARNING: Package(s) not found: tensorflow-gpu
+
+--- cupy (通过 /usr/bin/python3 -m pip show) ---
+WARNING: Package(s) not found: cupy
+
+--- pynvml (通过 /usr/bin/python3 -m pip show) ---
+WARNING: Package(s) not found: pynvml
+
+--- nvidia-ml-py (通过 /usr/bin/python3 -m pip show) ---
+WARNING: Package(s) not found: nvidia-ml-py
+
+--- scipy (通过 /usr/bin/python3 -m pip show) ---
+Name: scipy
+Version: 1.5.4
+Summary: SciPy: Scientific Library for Python
+Home-page: https://www.scipy.org
+Author: None
+Author-email: None
+License: BSD
+Location: /usr/local/lib/python3.6/dist-packages
+Requires: numpy
+Required-by: seaborn, scikit-learn
+
+--- pandas (通过 /usr/bin/python3 -m pip show) ---
+Name: pandas
+Version: 1.1.5
+Summary: Powerful data structures for data analysis, time series, and statistics
+Home-page: https://pandas.pydata.org
+Author: None
+Author-email: None
+License: BSD
+Location: /usr/local/lib/python3.6/dist-packages
+Requires: pytz, numpy, python-dateutil
+Required-by: torchstat, seaborn
+
+--- scikit-learn (通过 /usr/bin/python3 -m pip show) ---
+Name: scikit-learn
+Version: 0.24.0
+Summary: A set of python modules for machine learning and data mining
+Home-page: http://scikit-learn.org
+Author: None
+Author-email: None
+License: new BSD
+Location: /usr/local/lib/python3.6/dist-packages
+Requires: threadpoolctl, joblib, numpy, scipy
+Required-by: sklearn
+
+--- matplotlib (通过 /usr/bin/python3 -m pip show) ---
+Name: matplotlib
+Version: 3.3.4
+Summary: Python plotting package
+Home-page: https://matplotlib.org
+Author: John D. Hunter, Michael Droettboom
+Author-email: matplotlib-users@python.org
+License: PSF
+Location: /usr/local/lib/python3.6/dist-packages
+Requires: numpy, kiwisolver, python-dateutil, pillow, cycler, pyparsing
+Required-by: seaborn
+
+--- 默认 pip show torch ---
+Name: torch
+Version: 1.7.1+cu110
+Summary: Tensors and Dynamic neural networks in Python with strong GPU acceleration
+Home-page: https://pytorch.org/
+Author: PyTorch Team
+Author-email: packages@pytorch.org
+License: BSD-3
+Location: /usr/local/lib/python3.6/dist-packages
+Requires: typing-extensions, numpy, dataclasses
+Required-by: torchvision, torchstat, torchaudio, thop
+
+--- pip list 中 torch/cuda/nvidia/tensorflow 相关 ---
+cupy-cuda111            8.5.0
+torch                   1.7.1+cu110
+torchaudio              0.7.2
+torchstat               0.0.7
+torchvision             0.8.2+cu110
+
+======================================================================
+4. PyTorch 详细信息
+======================================================================
+当前 Python 解释器 import torch 成功
+torch.__version__: 1.7.1+cu110
+torch.__file__: /usr/local/lib/python3.6/dist-packages/torch/__init__.py
+torch.version.cuda: 11.0
+torch.backends.cudnn.version(): 8005
+torch.cuda.is_available(): True
+torch.cuda.device_count(): 3
+torch.cuda.current_device(): 0
+torch.cuda.get_device_name(0): NVIDIA GeForce RTX 3090
+torch.cuda.get_device_capability(0): (8, 6)
+torch.cuda.get_device_properties(0): _CudaDeviceProperties(name='NVIDIA GeForce RTX 3090', major=8, minor=6, total_memory=24268MB, multi_processor_count=82)
+
+======================================================================
+5. GPU / CUDA / 驱动
+======================================================================
+nvidia-smi:
+Fri Sep 25 17:11:22 2026       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 470.182.03   Driver Version: 470.182.03   CUDA Version: 11.4     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  NVIDIA GeForce ...  Off  | 00000000:1B:00.0 Off |                  N/A |
+| 57%   69C    P2   174W / 350W |   3874MiB / 24268MiB |      7%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+|   1  NVIDIA GeForce ...  Off  | 00000000:3E:00.0 Off |                  N/A |
+|  0%   55C    P2   155W / 350W |   4024MiB / 24268MiB |     42%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+|   2  NVIDIA GeForce ...  Off  | 00000000:89:00.0 Off |                  N/A |
+| 44%   57C    P2   151W / 350W |   4164MiB / 24268MiB |     48%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|    0   N/A  N/A     39438      C   ...da/envs/yangyi/bin/python     1935MiB |
+|    0   N/A  N/A     75211      C   ...da/envs/yangyi/bin/python     1937MiB |
+|    1   N/A  N/A     39443      C   ...da/envs/yangyi/bin/python     1935MiB |
+|    1   N/A  N/A     41936      C   ...da/envs/yangyi/bin/python     2087MiB |
+|    2   N/A  N/A     39447      C   ...da/envs/yangyi/bin/python     1913MiB |
+|    2   N/A  N/A     41935      C   ...da/envs/yangyi/bin/python     2249MiB |
++-----------------------------------------------------------------------------+
+
+nvcc --version:
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2017 NVIDIA Corporation
+Built on Fri_Nov__3_21:07:56_CDT_2017
+Cuda compilation tools, release 9.1, V9.1.85
+
+CUDA 相关环境变量:
+CUDA_HOME=
+CUDA_PATH=
+LD_LIBRARY_PATH=
+PATH=/data1/users/yangjunyi/.vscode-server/cli/servers/Stable-8b3775030ed1a69b13e4f4c628c612102e30a681/server/bin/remote-cli:/usr/local/Matlab/R2018a/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+CUDA_VISIBLE_DEVICES=
+
+======================================================================
+6. conda 信息
+======================================================================
+which conda: 
+conda --version: /bin/sh: conda: command not found
+conda env list: /bin/sh: conda: command not found
+常见 conda 安装路径:
+
+
+======================================================================
+7. 其他
+======================================================================
+环境变量 PATH: /data1/users/yangjunyi/.vscode-server/cli/servers/Stable-8b3775030ed1a69b13e4f4c628c612102e30a681/server/bin/remote-cli:/usr/local/Matlab/R2018a/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+当前工作目录: /data1/users/yangjunyi/basic
+当前用户: yangjunyi
+用户 home: /data1/users/yangjunyi
+
+
